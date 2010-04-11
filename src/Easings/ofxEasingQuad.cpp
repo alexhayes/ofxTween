@@ -8,8 +8,9 @@ float ofxEasingQuad::easeOut(float t,float b , float c, float d) {
 }
 
 float ofxEasingQuad::easeInOut(float t,float b , float c, float d) {
-	if ((t/=d/2) < 1) return ((c/2)*(t*t)) + b;
-	return -c/2 * (((t-2)*(--t)) - 1) + b;
+	if ((t/=d/2) < 1) return c/2*t*t + b;
+	return -c/2 * ((--t)*(t-2) - 1) + b;
+
 	/*
 	originally return -c/2 * (((t-2)*(--t)) - 1) + b;
 
