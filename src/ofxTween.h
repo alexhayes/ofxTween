@@ -41,7 +41,7 @@ class ofxTween{
 
 		ofEvent<int> end_E;
 
-	private:
+	protected:
 		typedef Poco::Delegate<ofxEasing,ofxEasingArgs,false> ofxTweenDelegate;
 		Poco::Timestamp	timestamp;
 
